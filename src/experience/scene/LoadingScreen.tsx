@@ -1,10 +1,8 @@
 import { useContext, useMemo, useRef } from 'react'
-import Lottie from 'lottie-react'
 import { FaAngleDown } from 'react-icons/fa6'
 import { LuMouse } from 'react-icons/lu'
 
 import { AppContext } from '@/src/context/appContext'
-import lighthouseAnimation from '@/assets/svgs/lighthouse.json'
 import timeAnimSrc from '@/assets/time.gif'
 
 import type { LottieRefCurrentProps } from 'lottie-react'

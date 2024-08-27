@@ -1,6 +1,6 @@
 import { useEffect, useRef, memo, useState, useLayoutEffect } from 'react'
 import Lottie, { LottieRefCurrentProps } from 'lottie-react'
-import { FaGithub, FaLinkedin, FaInstagram, FaLink, FaYoutube } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaLink, FaYoutube } from 'react-icons/fa';
 import { MdReplay } from 'react-icons/md'
 import { SiUpwork } from "react-icons/si";
 
@@ -20,7 +20,7 @@ import {
 import webDesignAnimation from '@/assets/svgs/web_design.json'
 import softwareAnimation from '@/assets/svgs/software_skill.json'
 import otherSkillAnimation from '@/assets/svgs/other_skill.json'
-import { FaSuitcase, FaWhatsapp } from 'react-icons/fa6'
+import { FaWhatsapp } from 'react-icons/fa6';
 
 const titles = [
     'Full-Stack Developer',
