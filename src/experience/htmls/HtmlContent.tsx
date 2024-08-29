@@ -528,17 +528,17 @@ const testimonialsList = [
         summary: `Wasil has great communication and gives a lot of positive feedback onto how to make this project work better.`
     },
     {
-        name: 'Adah Hu',
-        title: 'Head of Software Engineering, FLAIR',
-        image: 'images/testimonials/adah.webp',
-        alt: "Adah Hu's avatar",
-        href: 'https://www.linkedin.com/in/adah-h-a0854554/',
-        ariaLabel: 'Adah Hu (opens in a new tab)',
+        name: 'Alister Martin',
+        title: 'ER physician and an Assistant Professor at Harvard Medical School',
+        image: 'images/testimonials/alister.webp',
+        alt: "alister",
+        href: 'https://www.google.com/search?q=alister+martin',
+        ariaLabel: 'alister (opens in a new tab)',
         linkIcons: (
             <ul className='flex gap-2'>
                 <li>
                     <a
-                        href='https://www.linkedin.com/in/adah-h-a0854554/'
+                        href='https://www.google.com/search?q=alister+martin'
                         target='_blank'
                         rel='noreferrer noopener'
                         aria-label='Linkedin (opens in a new tab)'
@@ -549,20 +549,20 @@ const testimonialsList = [
                 </li>
             </ul>
         ),
-        summary: `Wasil exhibits a remarkable capacity for learning. Coupled with his strong sense of responsibility, he diligently applies his knowledge to exceed expectations and meet deadlines consistently. Wasil's combination of aptitude and reliability makes him an invaluable person in any endeavor he undertakes.`
+        summary: `(one of the group chat msgs) We are giving the digital MAGICIAN award to Wasil today. @Wasil you created a brand new method using chrome extensions for us to easily capture data from any federal benefits application directly into our Link Health database.`
     },
     {
-        name: 'Jim Liu',
-        title: 'Automation Analyst, Hutchison Ports',
-        image: 'images/testimonials/jim.webp',
-        alt: "Jim Liu's avatar",
-        href: 'https://www.linkedin.com/in/jian-liu-001658212/',
-        ariaLabel: 'Jim Liu (opens in a new tab)',
+        name: 'Myles Howard',
+        title: 'Senior Environmental Scientist, Carbonfootprint ltd',
+        image: 'images/testimonials/myles.webp',
+        alt: "myles's avatar",
+        href: 'https://www.linkedin.com/in/myles-howard455/',
+        ariaLabel: 'myles (opens in a new tab)',
         linkIcons: (
             <ul className='flex gap-2'>
                 <li>
                     <a
-                        href='https://www.linkedin.com/in/jian-liu-001658212/'
+                        href='https://www.linkedin.com/in/myles-howard455/'
                         target='_blank'
                         rel='noreferrer noopener'
                         aria-label='Linkedin (opens in a new tab)'
@@ -573,7 +573,10 @@ const testimonialsList = [
                 </li>
             </ul>
         ),
-        summary: `Wasil demonstrated great dedication when we worked together on machine learning projects. He is deeply interested in the underlying principles of the problems at hand and extends his curiosity to other parts of the system, ensuring comprehensive solutions. This is a valuable skill for an engineer. He is always smiling and proactive in communication, a trait essential for any adventurer.`
+        summary: ` -Great speed and problems solving
+ -Good consistent uploads especially recently
+ -Great to see you bring forward ideas and adapt my UI ideas into what works best for the system
+ -No change is too big you will always give it a go and let me know if compromises are needed`
     }
 ]
 export const HtmlContent = memo(function HtmlContent() {
