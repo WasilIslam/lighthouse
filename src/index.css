@@ -14,27 +14,27 @@
     }
 
     :root {
-        --color-primary: 255 248 231;
-        --color-primary-monochrome: 245 239 224;
-        --color-secondary: 80 80 80;
-        --color-secondary-bg: 130 130 130;
-        --color-secondary-light: 120 120 120;
-        --color-accent: 246 92 53;
-        --color-accent-bg: 215 221 204;
-        --color-clock-blackground: 0 0 0;
-        --color-focus-outline: 86 19 209;
+        --color-primary: 240 240 245; /* Light gray with a slight bluish tint */
+        --color-primary-monochrome: 220 220 230; /* Slightly darker gray */
+        --color-secondary: 50 50 60; /* Dark gray with a hint of blue */
+        --color-secondary-bg: 70 70 90; /* Medium gray with blue undertones */
+        --color-secondary-light: 160 160 180; /* Light gray with blue undertones */
+        --color-accent: 72 133 237; /* Soft blue for a refreshing accent */
+        --color-accent-bg: 236 240 243; /* Very light blue background */
+        --color-clock-blackground: 30 30 40; /* Dark grayish-blue for background */
+        --color-focus-outline: 89 207 249; /* Bright cyan for focus outlines */
     }
 
     :root[theme='dark'] {
-        --color-primary: 66 52 48;
-        --color-primary-monochrome: 78 62 57;
-        --color-secondary: 228 210 209;
-        --color-secondary-bg: 151 137 136;
-        --color-secondary-light: 197 179 178;
-        --color-accent: 246 92 53;
-        --color-accent-bg: 49 57 75;
-        --color-clock-blackground: 0 0 0;
-        --color-focus-outline: 228 210 209;
+        --color-primary: 25 25 35; /* Dark gray with a hint of blue */
+        --color-primary-monochrome: 35 35 50; /* Slightly lighter dark gray */
+        --color-secondary: 200 200 210; /* Light grayish-blue for text */
+        --color-secondary-bg: 55 55 70; /* Medium-dark gray with blue undertones */
+        --color-secondary-light: 100 100 120; /* Gray with blue undertones */
+        --color-accent: 98 182 255; /* Brighter blue for accent in dark mode */
+        --color-accent-bg: 20 25 40; /* Dark background with blue tint */
+        --color-clock-blackground: 10 10 20; /* Very dark grayish-blue */
+        --color-focus-outline: 98 182 255; /* Bright cyan for focus outlines in dark mode */
     }
 
     a,
@@ -49,6 +49,7 @@
         @apply outline;
     }
 }
+
 
 @layer components {
     .brightness-slider {

@@ -1,8 +1,8 @@
 import { useEffect, useRef, memo, useState, useLayoutEffect } from 'react'
 import Lottie, { LottieRefCurrentProps } from 'lottie-react'
-import { FaGithub, FaLinkedin, FaLink, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaLink, FaYoutube } from 'react-icons/fa'
 import { MdReplay } from 'react-icons/md'
-import { SiUpwork } from "react-icons/si";
+import { SiUpwork } from 'react-icons/si'
 
 import { HtmlScrollContainer } from '@/src/experience/htmls/HtmlScrollContainer'
 import { HtmlSection } from '@/src/experience/htmls/HtmlSection'
@@ -20,16 +20,9 @@ import {
 import webDesignAnimation from '@/assets/svgs/web_design.json'
 import softwareAnimation from '@/assets/svgs/software_skill.json'
 import otherSkillAnimation from '@/assets/svgs/other_skill.json'
-import { FaTwitter, FaWhatsapp } from 'react-icons/fa6';
+import { FaTwitter, FaWhatsapp } from 'react-icons/fa6'
 
-const titles = [
-    'Full-Stack Developer',
-    'Web Designer',
-    'Automation Engineer',
-    'Scraping Expert',
-    'Muslim',
-    'Normal Person'
-]
+const titles = ['Full-Stack Developer', 'Web Guru', 'or an automation king', 'Human being']
 const studyList = [
     {
         type: 'book',
@@ -300,7 +293,7 @@ const workList = [
                 <li>
                     <a
                         // href='https://github.com/wasiljpy/sustrax'
-                        onClick={()=>alert("REPO is private🤫")}
+                        onClick={() => alert('REPO is private🤫')}
                         target='_blank'
                         rel='noreferrer noopener'
                         aria-label='GitHub (opens in a new tab)'
@@ -475,11 +468,11 @@ const workList = [
     },
     {
         type: 'project',
-        title: "+ 40 projects on Upwork (as of aug 2024)",
+        title: '+ 40 projects on Upwork (as of aug 2024)',
         image: 'images/work/upwork.webp',
-        alt: "Upwork Top rated",
+        alt: 'Upwork Top rated',
         href: 'https://www.upwork.com/freelancers/itengineer',
-        ariaLabel: "Upwork top rated",
+        ariaLabel: 'Upwork top rated',
         linkIcons: (
             <ul className='flex gap-2'>
                 <li>
@@ -487,7 +480,7 @@ const workList = [
                         href='https://www.upwork.com/freelancers/itengineer'
                         target='_blank'
                         rel='noreferrer noopener'
-                        aria-label="Upwork top rated"
+                        aria-label='Upwork top rated'
                         className='block'
                     >
                         <SiUpwork className='icon-link-md' />
@@ -978,31 +971,32 @@ export const HtmlContent = memo(function HtmlContent() {
                     contentObserverRef={contentObserverRef}
                 >
                     <p>
-                        I'm an ambitious software engineer based in Lahore, Earth with over 2 years of professional
-                        experience in transforming ideas from 0 to 100 and creating captivating digital experiences that
-                        embody elegance, simplicity, and detail. In my full-time role as an application developer, I've
-                        successfully made several significant improvements to products with over 2000 daily users while
-                        laying the groundwork for a freelance career through targeted networking and skill-building. I
-                        am also committed to a long-life journey of continuous growth to stay at the forefront of
-                        technology and personal development.
+                        I'm a passionate <span className='text-accent'>Automation Engineer</span> and{' '}
+                        <span className='text-accent'>Full Stack Developer</span> from Lahore with 5+ years of
+                        experience in transforming ideas into reality. I've enhanced products with 2000+ daily users and
+                        built a foundation for a thriving freelance career. My journey is all about continuous growth,
+                        staying at the forefront of technology, and creating digital experiences that are both elegant
+                        and impactful.
                     </p>
                 </HtmlSection>
                 <HtmlSection
                     title={
                         <>
-                            How it <span className='text-accent'>started</span>?
+                            Bored <span className='text-accent'>reading?</span>
+                            <p className='font-semibold'>
+                                I know the attention span is so low nowadays. So, here are{' '}
+                                <span className='text-accent'>some quick abouts.</span>
+                            </p>
                         </>
                     }
                     contentObserverRef={contentObserverRef}
                 >
-                    <p>
-                        I'm a self-taught software engineer fueled by a deep passion for the digital world. I began my
-                        career as a building surveyor, a field steeped in rigid practices that often limited my creative
-                        spirit. Seeking a change, I discovered the intriguing world of programming, a place where
-                        innovation thrives and creative problem-solving is encouraged. This propelled me into a mountain
-                        of code, where I've found passion for crafting web applications with stunning visuals and
-                        software that embrace efficiency.
-                    </p>
+                    <p className='mb-4'>I can assist you with building:</p>
+                    <ul className='list-inside list-disc space-y-2'>
+                        <li>automation workflows</li>
+                        <li>scalable dashboards</li>
+                        <li>or a simple to-do app</li>
+                    </ul>
                 </HtmlSection>
             </HtmlScrollContainer>
 
@@ -1062,6 +1056,54 @@ export const HtmlContent = memo(function HtmlContent() {
                     contentObserverRef={contentObserverRef}
                 >
                     <ul>
+                        <li data-name='other' className='hidden-content section-list-item p-4'>
+                            <div className='relative w-full'>
+                                <figure>
+                                    <Lottie
+                                        lottieRef={otherLottieRef}
+                                        animationData={otherSkillAnimation}
+                                        autoPlay={false}
+                                        loop={false}
+                                        onComplete={() => {
+                                            otherLottieRef.current?.playSegments([100, 700], false)
+                                        }}
+                                        onDOMLoaded={() => {
+                                            otherLottieRef.current?.stop()
+                                        }}
+                                        className='m-auto w-[400px] max-sm:w-[340px] max-xs:w-full'
+                                    />
+                                </figure>
+                                <header className='mb-[8px] mt-[8px]'>
+                                    <h1 className='text-center text-xl font-black text-accent max-xs:text-base'>
+                                        Automation & AI
+                                    </h1>
+                                </header>
+                                <p className='text-center text-secondary-light'>
+                                    I value A.I. and automation. They are the biggest time savers.
+                                    <br /> It feels good to know my automation's have helped save thousands of hours.
+                                </p>
+                                <ul className='text-center'>
+                                    <li className='keypoint-list-item'>
+                                        <p>Python</p>
+                                    </li>
+                                    <li className='keypoint-list-item'>
+                                        <p>Selenium</p>
+                                    </li>
+                                    <li className='keypoint-list-item'>
+                                        <p>GPT apis 💘</p>
+                                    </li>
+                                </ul>
+
+                                <button
+                                    className='absolute right-0 top-0'
+                                    onClick={() => {
+                                        otherLottieRef.current?.playSegments([0, 100], true)
+                                    }}
+                                >
+                                    <MdReplay size={24} className='icon-link-md' aria-label='Replay' />
+                                </button>
+                            </div>
+                        </li>
                         <li data-name='design' className='hidden-content section-list-item p-4'>
                             <div className='relative w-full'>
                                 <figure>
@@ -1087,18 +1129,6 @@ export const HtmlContent = memo(function HtmlContent() {
                                 <ul className='text-center'>
                                     <li className='keypoint-list-item'>
                                         <p>Figma</p>
-                                    </li>
-                                    <li className='keypoint-list-item'>
-                                        <p>Blender</p>
-                                    </li>
-                                    <li className='keypoint-list-item'>
-                                        <p>Svgator</p>
-                                    </li>
-                                    <li className='keypoint-list-item'>
-                                        <p>Svg Animation</p>
-                                    </li>
-                                    <li className='keypoint-list-item'>
-                                        <p>Stable Diffusion</p>
                                     </li>
                                     <li className='keypoint-list-item'>
                                         <p>Responsiveness</p>
@@ -1152,13 +1182,10 @@ export const HtmlContent = memo(function HtmlContent() {
                                         <p>React</p>
                                     </li>
                                     <li className='keypoint-list-item'>
-                                        <p>Vue</p>
-                                    </li>
-                                    <li className='keypoint-list-item'>
                                         <p>Node</p>
                                     </li>
                                     <li className='keypoint-list-item'>
-                                        <p>Django</p>
+                                        <p>AntDesign</p>
                                     </li>
                                     <li className='keypoint-list-item'>
                                         <p>MongoDB</p>
@@ -1176,10 +1203,7 @@ export const HtmlContent = memo(function HtmlContent() {
                                         <p>Git</p>
                                     </li>
                                     <li className='keypoint-list-item'>
-                                        <p>ThreeJS</p>
-                                    </li>
-                                    <li className='keypoint-list-item'>
-                                        <p>GLSL</p>
+                                        <p>NextJS</p>
                                     </li>
                                 </ul>
 
@@ -1187,56 +1211,6 @@ export const HtmlContent = memo(function HtmlContent() {
                                     className='absolute right-0 top-0'
                                     onClick={() => {
                                         softwareLottieRef.current?.playSegments([0, 320], true)
-                                    }}
-                                >
-                                    <MdReplay size={24} className='icon-link-md' aria-label='Replay' />
-                                </button>
-                            </div>
-                        </li>
-                        <li data-name='other' className='hidden-content section-list-item p-4'>
-                            <div className='relative w-full'>
-                                <figure>
-                                    <Lottie
-                                        lottieRef={otherLottieRef}
-                                        animationData={otherSkillAnimation}
-                                        autoPlay={false}
-                                        loop={false}
-                                        onComplete={() => {
-                                            otherLottieRef.current?.playSegments([100, 700], false)
-                                        }}
-                                        onDOMLoaded={() => {
-                                            otherLottieRef.current?.stop()
-                                        }}
-                                        className='m-auto w-[400px] max-sm:w-[340px] max-xs:w-full'
-                                    />
-                                </figure>
-                                <header className='mb-[8px] mt-[8px]'>
-                                    <h1 className='text-center text-xl font-black text-accent max-xs:text-base'>
-                                        Other Skills
-                                    </h1>
-                                </header>
-                                <p className='text-center text-secondary-light'>
-                                    I value continuous personal growth outside the office.
-                                </p>
-                                <ul className='text-center'>
-                                    <li className='keypoint-list-item'>
-                                        <p>English</p>
-                                    </li>
-                                    <li className='keypoint-list-item'>
-                                        <p>Cantonese</p>
-                                    </li>
-                                    <li className='keypoint-list-item'>
-                                        <p>Mandarin</p>
-                                    </li>
-                                    <li className='keypoint-list-item'>
-                                        <p>Japanese</p>
-                                    </li>
-                                </ul>
-
-                                <button
-                                    className='absolute right-0 top-0'
-                                    onClick={() => {
-                                        otherLottieRef.current?.playSegments([0, 100], true)
                                     }}
                                 >
                                     <MdReplay size={24} className='icon-link-md' aria-label='Replay' />
@@ -1353,7 +1327,7 @@ export const HtmlContent = memo(function HtmlContent() {
                                             loading='lazy'
                                             alt={work.alt}
                                             src={work.image}
-                                            className='project-list-img bg-white h-full'
+                                            className='project-list-img h-full bg-white'
                                         />
                                     </figure>
                                     <div className='w-full'>
@@ -1438,44 +1412,37 @@ export const HtmlContent = memo(function HtmlContent() {
             <HtmlScrollContainer
                 top={memorialSectionTop}
                 position='right'
-                backgroundTitle='Memorial'
-                topTitle='To get it off my chest...'
-                bottomTitle={
-                    <>
-                        The <span className='text-accent'> Memorial</span>
-                    </>
-                }
+                backgroundTitle='Finally'
+                topTitle='Other links and quotes'
+                bottomTitle={<>Other links.</>}
                 contentObserverRef={contentObserverRef}
                 ref={memorialSectionRef}
             >
-                <HtmlSection
-                    title={
-                        <>
-                            To my dearest <span className='text-accent'>mother</span>
-                        </>
-                    }
-                    contentObserverRef={contentObserverRef}
-                >
+                <HtmlSection title={<>Quotes you should read.</>} contentObserverRef={contentObserverRef}>
                     <p>
-                        If there is a time machine like this website, I would go back in time and trade every single
-                        second I spent building it for the chance to be by your side. This world didn't treat you well,
-                        and I know it. I can only imagine the pain and suffering you've been through. Please don't feel
-                        sorry for me, you've always been the best mom in the world to me. I miss you and I love you, and
-                        may you find joy and peace in a better place.
+                        <strong>"Man can have nothing but what he strives for."</strong>
+                        <br />
+                        <span className='text-accent'>
+                            <em>(Quran 53:39)</em>
+                        </span>
+                    </p>
+                    <p>
+                        <strong>"The wound is the place where the Light enters you."</strong>
+                        <br />
+                        <span className='text-accent'>
+                            <em>- Rumi</em>
+                        </span>
                     </p>
                 </HtmlSection>
-                <HtmlSection
-                    title={
-                        <>
-                            To<span className='text-accent'> anyone</span> who's reading this
-                        </>
-                    }
-                    contentObserverRef={contentObserverRef}
-                >
+                <HtmlSection title={<>Links.</>} contentObserverRef={contentObserverRef}>
                     <p>
-                        Nothing is more important than your loved ones, neither your work, nor your parties. I've
-                        learned it the hard way. So if you're reading this, you should go spend some time with the loved
-                        ones.
+                        A google sheet i will use to track my discipline.
+                        <a
+                            className='flex text-accent'
+                            href='https://docs.google.com/spreadsheets/d/1cEpdYpIEQyJs_hlwCSHt7Qst-gbMlfrb0MYifWi7Vso/edit?usp=sharing'
+                        >
+                            <FaLink />
+                        </a>
                     </p>
                 </HtmlSection>
             </HtmlScrollContainer>

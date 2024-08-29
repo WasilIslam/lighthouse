@@ -97,7 +97,7 @@ export function LighthouseModel(props: JSX.IntrinsicElements['group']) {
         'models/first_floor_02.webp',
         'models/second_floor_01.webp',
         'models/second_floor_02.webp',
-        'models/mum.webp'
+        'images/last_page_ayat.webp'
     ])
 
     lighthouseTexture.flipY = false
