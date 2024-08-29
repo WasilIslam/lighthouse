@@ -20,7 +20,7 @@ import {
 import webDesignAnimation from '@/assets/svgs/web_design.json'
 import softwareAnimation from '@/assets/svgs/software_skill.json'
 import otherSkillAnimation from '@/assets/svgs/other_skill.json'
-import { FaWhatsapp } from 'react-icons/fa6';
+import { FaTwitter, FaWhatsapp } from 'react-icons/fa6';
 
 const titles = [
     'Full-Stack Developer',
@@ -290,16 +290,16 @@ const studyList = [
 const workList = [
     {
         type: 'project',
-        title: 'Sustrax MX',
-        image: 'images/work/wildbear.webp',
-        alt: 'WildBear Shop hero section',
-        href: 'https://www.wildbear-shop.com/',
-        ariaLabel: 'WildBear Shop (opens in a new tab)',
+        title: 'Sustrax MX (carbonfootprint.com)',
+        image: 'https://www.carbonfootprint.com/assets/carbonfootprintlogo.gif',
+        alt: 'Sustrax MX section',
+        href: 'https://youtu.be/4UYHtoFlMQo',
+        ariaLabel: 'sustraxmx(opens in a new tab)',
         linkIcons: (
             <ul className='flex gap-2'>
                 <li>
                     <a
-                        // href='https://github.com/wasiljpy/wildbear'
+                        // href='https://github.com/wasiljpy/sustrax'
                         onClick={()=>alert("REPO is private🤫")}
                         target='_blank'
                         rel='noreferrer noopener'
@@ -311,10 +311,10 @@ const workList = [
                 </li>
                 <li>
                     <a
-                        href='https://www.wildbear-shop.com/'
+                        href='https://www.sustraxmx.com/'
                         target='_blank'
                         rel='noreferrer noopener'
-                        aria-label='WildBear Shop (opens in a new tab)'
+                        aria-label='sustrax Shop (opens in a new tab)'
                         className='block'
                     >
                         <FaLink className='icon-link-md' />
@@ -322,7 +322,7 @@ const workList = [
                 </li>
             </ul>
         ),
-        summary: `Carbonfootprint tracking dashboard with over 2000 users.`,
+        summary: `Carbonfootprint tracking webapp with over 2000 companies registered (as of Aug 24).`,
         keypoints: (
             <ul>
                 <li className='keypoint-list-item'>Javascript</li>
@@ -338,11 +338,45 @@ const workList = [
     },
     {
         type: 'project',
-        title: 'Lighthouse Portfolio',
-        image: 'images/work/portfolio.webp',
-        alt: 'Lighthouse Portfolio hero section',
-        href: 'https://wasillighthouse.com/',
-        ariaLabel: 'Lighthouse Portfolio (opens in a new tab)',
+        title: 'Link-Health.org',
+        image: 'images/work/lh.webp',
+        alt: 'lh',
+        ariaLabel: 'lh',
+        href: 'https://www.link-health.org/',
+        linkIcons: (
+            <ul className='flex gap-2'>
+                <li>
+                    <a
+                        href='https://www.link-health.org/'
+                        target='_blank'
+                        rel='noreferrer noopener'
+                        aria-label='dialedin'
+                        className='block'
+                    >
+                        <FaLink className='icon-link-md' />
+                    </a>
+                </li>
+            </ul>
+        ),
+        summary: `An organization which has given back 1M+ $ to the people by connecting them to various benefits. My role as a lead automation engineer is to help them centralize and automate 40% of the work.`,
+        keypoints: (
+            <ul>
+                <li className='keypoint-list-item'>Python</li>
+                <li className='keypoint-list-item'>Selenium</li>
+                <li className='keypoint-list-item'>React</li>
+                <li className='keypoint-list-item'>Pandas</li>
+                <li className='keypoint-list-item'>Gspread</li>
+                <li className='keypoint-list-item'>BeautifulSoap</li>
+            </ul>
+        )
+    },
+    {
+        type: 'project',
+        title: 'Urdu.JS',
+        image: 'images/work/urdujs.webp',
+        alt: 'Urdu.JS Portfolio hero section',
+        href: 'https://urdujs.netlify.app/',
+        ariaLabel: 'Urdu.JS Portfolio (opens in a new tab)',
         linkIcons: (
             <ul className='flex gap-2'>
                 <li>
@@ -358,10 +392,10 @@ const workList = [
                 </li>
                 <li>
                     <a
-                        href='https://wasillighthouse.com/'
+                        href='https://wasilUrdu.JS.com/'
                         target='_blank'
                         rel='noreferrer noopener'
-                        aria-label='Lighthouse Portfolio (opens in a new tab)'
+                        aria-label='Urdu.JS Portfolio (opens in a new tab)'
                         className='block'
                     >
                         <FaLink className='icon-link-md' />
@@ -369,35 +403,32 @@ const workList = [
                 </li>
             </ul>
         ),
-        summary: `An innovative experience by integrating 3D visuals and interactive elements into web. It delivers a captivating interface that pushes the boundaries of traditional web design.`,
+        summary: `Javascript in my native urdu language. It is to help the beginners.`,
         keypoints: (
             <ul>
-                <li className='keypoint-list-item'>Typescript</li>
+                <li className='keypoint-list-item'>Javascript</li>
                 <li className='keypoint-list-item'>React</li>
-                <li className='keypoint-list-item'>R3F</li>
-                <li className='keypoint-list-item'>GLSL</li>
-                <li className='keypoint-list-item'>Tailwind</li>
-                <li className='keypoint-list-item'>React Spring</li>
-                <li className='keypoint-list-item'>Blender</li>
-                <li className='keypoint-list-item'>Lottie</li>
+                <li className='keypoint-list-item'>HTML</li>
+                <li className='keypoint-list-item'>Monaco Editor</li>
+                <li className='keypoint-list-item'>Compiler</li>
             </ul>
         )
     },
     {
         type: 'project',
-        title: 'System and method for detecting surface defect of object',
-        image: 'images/work/defect_patent.webp',
-        alt: 'System and method for detecting surface defect of object preview',
-        ariaLabel: 'System and method for detecting surface defect of object (opens in a new tab)',
-        href: 'https://esearch.ipd.gov.hk/nis-pos-view/#/pt/details/view/3281124_32023070552.9/0/1/10/0/null_null/KCFeIShhcHBsaWNOdW1iZXI6KDMyMDIzMDcwNTUyLjkpKSFeISkgQU5EIHB0UmVjb3JkU2VxOjE%3D?lang=en',
+        title: 'Automation of Dialedinbookkeeping',
+        image: 'images/work/dialedin.webp',
+        alt: 'dialedin',
+        ariaLabel: 'Dialedin',
+        href: 'https://www.dialedinbookkeeping.com/',
         linkIcons: (
             <ul className='flex gap-2'>
                 <li>
                     <a
-                        href='https://esearch.ipd.gov.hk/nis-pos-view/#/pt/details/view/3281124_32023070552.9/0/1/10/0/null_null/KCFeIShhcHBsaWNOdW1iZXI6KDMyMDIzMDcwNTUyLjkpKSFeISkgQU5EIHB0UmVjb3JkU2VxOjE%3D?lang=en'
+                        href='https://www.dialedinbookkeeping.com/'
                         target='_blank'
                         rel='noreferrer noopener'
-                        aria-label='System and method for detecting surface defect of object (opens in a new tab)'
+                        aria-label='dialedin'
                         className='block'
                     >
                         <FaLink className='icon-link-md' />
@@ -405,113 +436,81 @@ const workList = [
                 </li>
             </ul>
         ),
-        summary: `A short-term patent of a system that utilizes a robotic arm equipped with a camera to capture images of an object from various angles. It employs a detection algorithm to pinpoint any defects present on the images.`,
+        summary: `Worked with an accounting firm for over 1.5 years automating 10s of workflows. Saving them 300 hours every month.`,
         keypoints: (
             <ul>
-                <li className='keypoint-list-item'>Machine Learning</li>
-                <li className='keypoint-list-item'>CNN</li>
-                <li className='keypoint-list-item'>Robotics</li>
                 <li className='keypoint-list-item'>Python</li>
+                <li className='keypoint-list-item'>Selenium</li>
                 <li className='keypoint-list-item'>React</li>
+                <li className='keypoint-list-item'>Pandas</li>
+                <li className='keypoint-list-item'>Gspread</li>
+                <li className='keypoint-list-item'>BeautifulSoap</li>
             </ul>
         )
     },
+
     {
         type: 'project',
-        title: `Method for detecting and predicting a bottleneck in a transportation process of a
-        logistics center`,
-        image: 'images/work/logistic_patent.webp',
-        alt: 'Method for detecting and predicting a bottleneck in a transportation process of a logistics center preview',
-        href: 'https://esearch.ipd.gov.hk/nis-pos-view/#/pt/details/view/3276488_32023070062.9/0/1/10/0/null_null/KCFeIShhcHBsaWNOdW1iZXI6KDMyMDIzMDcwMDYyLjkpKSFeISkgQU5EIHB0UmVjb3JkU2VxOjE%3D?lang=en',
-        ariaLabel:
-            'Method for detecting and predicting a bottleneck in a transportation process of a logistics center (opens in a new tab)',
-        linkIcons: (
-            <ul className='flex gap-2'>
-                <li>
-                    <a
-                        href='https://esearch.ipd.gov.hk/nis-pos-view/#/pt/details/view/3276488_32023070062.9/0/1/10/0/null_null/KCFeIShhcHBsaWNOdW1iZXI6KDMyMDIzMDcwMDYyLjkpKSFeISkgQU5EIHB0UmVjb3JkU2VxOjE%3D?lang=en'
-                        target='_blank'
-                        rel='noreferrer noopener'
-                        aria-label='Method for detecting and predicting a bottleneck in a transportation process of a
-                        logistics center (opens in a new tab)'
-                        className='block'
-                    >
-                        <FaLink className='icon-link-md' />
-                    </a>
-                </li>
-            </ul>
-        ),
-        summary: `A short-term patent of a system for predicting bottlenecks in cargo logistics at Hong Kong Airport. We gathered data from sensors across the transport belts and created a predictive model that can proactively identify potential congestion points.`,
-        keypoints: (
-            <ul>
-                <li className='keypoint-list-item'>IoT</li>
-                <li className='keypoint-list-item'>React</li>
-                <li className='keypoint-list-item'>Python</li>
-            </ul>
-        )
-    },
-    {
-        type: 'project',
-        title: 'FE Exam Certificate',
-        image: 'images/work/FE_exam_cert.webp',
-        alt: 'FE Exam Certificate',
-        href: 'https://itpec.org/about/itpec-common-exam.html',
+        title: 'Speed Coding Winner- Careem',
+        image: 'images/work/careem_winner.webp',
+        alt: 'Careem Certificate',
+        href: 'https://twitter.com/careem/status/1511239711246872579',
         ariaLabel: 'ITPEC Common Examination (opens in a new tab)',
         linkIcons: (
             <ul className='flex gap-2'>
                 <li>
                     <a
-                        href='https://itpec.org/about/itpec-common-exam.html'
+                        href='https://twitter.com/careem/status/1511239711246872579'
                         target='_blank'
                         rel='noreferrer noopener'
                         aria-label='ITPEC Common Examination (opens in a new tab)'
                         className='block'
                     >
-                        <FaLink className='icon-link-md' />
+                        <FaTwitter className='icon-link-md' />
                     </a>
                 </li>
             </ul>
         ),
-        summary: `I traveled to the Philippines for the FE Examination. It earned me the qualifications for the Engineering Visa in Japan.`
+        summary: `Won the careem speed coding competition in 2022. Grabbing a prize of 25,000 PKR`
     },
     {
         type: 'project',
-        title: "Time's Person of the Year 2006",
-        image: 'images/work/times_person_of_the_year.webp',
-        alt: "Time's Person of the Year 2006 preview",
-        href: 'https://en.wikipedia.org/wiki/You_(Time_Person_of_the_Year)',
-        ariaLabel: "Time's Person of the Year 2006 (opens in a new tab)",
+        title: "+ 40 projects on Upwork (as of aug 2024)",
+        image: 'images/work/upwork.webp',
+        alt: "Upwork Top rated",
+        href: 'https://www.upwork.com/freelancers/itengineer',
+        ariaLabel: "Upwork top rated",
         linkIcons: (
             <ul className='flex gap-2'>
                 <li>
                     <a
-                        href='https://en.wikipedia.org/wiki/You_(Time_Person_of_the_Year)'
+                        href='https://www.upwork.com/freelancers/itengineer'
                         target='_blank'
                         rel='noreferrer noopener'
-                        aria-label="Time's Person of the Year 2006 (opens in a new tab)"
+                        aria-label="Upwork top rated"
                         className='block'
                     >
-                        <FaLink className='icon-link-md' />
+                        <SiUpwork className='icon-link-md' />
                     </a>
                 </li>
             </ul>
         ),
-        summary: `In 2006, Time named me the official nominee for Person of the Year.`
+        summary: `In 2023, I became a top rated engineer on Upwork. With 40+ projects done.`
     }
 ]
 const testimonialsList = [
     {
-        name: 'Francesco Cursi',
-        title: 'Sr. Research Engineer, Huawei',
-        image: 'images/testimonials/fran.webp',
-        alt: "Francesco Cursi's avatar",
-        href: 'https://francescocursi.com/',
-        ariaLabel: 'Francesco Cursi (opens in a new tab)',
+        name: 'Ben Gavin',
+        title: 'CEO, Dialedinbookeeping',
+        image: 'images/testimonials/ben.webp',
+        alt: "Ben Gavin's avatar",
+        href: 'https://dialedinbookkeeping.com/',
+        ariaLabel: 'Ben Gavin (opens in a new tab)',
         linkIcons: (
             <ul className='flex gap-2'>
                 <li>
                     <a
-                        href='https://www.linkedin.com/in/francesco-c-a94568111/'
+                        href='https://www.linkedin.com/in/bengavin'
                         target='_blank'
                         rel='noreferrer noopener'
                         aria-label='Linkedin (opens in a new tab)'
@@ -522,10 +521,10 @@ const testimonialsList = [
                 </li>
                 <li>
                     <a
-                        href='https://francescocursi.com/'
+                        href='https://dialedinbookkeeping.com.com/'
                         target='_blank'
                         rel='noreferrer noopener'
-                        aria-label='Francesco Cursi (opens in a new tab)'
+                        aria-label='Ben Gavin (opens in a new tab)'
                         className='block'
                     >
                         <FaLink className='icon-link-md' />
@@ -533,7 +532,7 @@ const testimonialsList = [
                 </li>
             </ul>
         ),
-        summary: `From my time working alongside Wasil, he has demonstrated his remarkable ability to solve problems and adapt quickly to new subjects. It's all the more impressive given that he transitioned to this field from a completely different career. Any team would be lucky to have him.`
+        summary: `Wasil has great communication and gives a lot of positive feedback onto how to make this project work better.`
     },
     {
         name: 'Adah Hu',
@@ -650,7 +649,7 @@ export const HtmlContent = memo(function HtmlContent() {
         let currentLetter = 0
         let shouldType = true
 
-        typingEffectIntervalRef.current = setInterval(() => {
+        typingEffectIntervalRef.current = window.setInterval(() => {
             if (typingTextRef.current) {
                 typingTextRef.current.textContent = titles[currentWord].slice(0, currentLetter)
 
@@ -1354,7 +1353,7 @@ export const HtmlContent = memo(function HtmlContent() {
                                             loading='lazy'
                                             alt={work.alt}
                                             src={work.image}
-                                            className='project-list-img'
+                                            className='project-list-img bg-white h-full'
                                         />
                                     </figure>
                                     <div className='w-full'>

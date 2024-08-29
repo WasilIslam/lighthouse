@@ -37,10 +37,10 @@ export function PhotoMasonry() {
         >
             <figure tabIndex={0} className='life-list-img-wrapper group col-span-1 row-span-6'>
                 <AnimatedPhoto
-                    src='images/life/painting.webp'
-                    alt='Wasil is painting a golden retriever on canvas'
-                    title='Hong Kong'
-                    description='Art Workshop'
+                    src='images/life/lahore_museum.webp'
+                    alt='lahore museum'
+                    title='Lahore Museum'
+                    description='...'
                 />
             </figure>
             <figure tabIndex={0} className='life-list-img-wrapper group col-span-1 row-span-3'>
@@ -53,10 +53,10 @@ export function PhotoMasonry() {
             </figure>
             <figure tabIndex={0} className='life-list-img-wrapper group col-span-1 row-span-5'>
                 <AnimatedPhoto
-                    src='images/life/fire_dragon_dance.webp'
-                    alt='A splashy red lightbox depicting the Fire Dragon Dance'
-                    title='Hong Kong'
-                    description='Fire Dragon Dance'
+                    src='images/life/kaaba.webp'
+                    alt='Holy kaaba'
+                    title='Kaaba'
+                    description='On a wishlist💗'
                 />
             </figure>
             <figure tabIndex={0} className='life-list-img-wrapper group row-span-6'>
@@ -77,18 +77,18 @@ export function PhotoMasonry() {
             </figure>
             <figure tabIndex={0} className='life-list-img-wrapper group col-span-1 row-span-6'>
                 <AnimatedPhoto
-                    src='images/life/taiwan_graffiti.webp'
-                    alt='A massive graffiti artwork depicting a robot on a tall building'
-                    title='Taipei'
-                    description='Graffiti'
+                    src='images/life/mma.png'
+                    alt='boxing'
+                    title='Me learning'
+                    description='M.M.A'
                 />
             </figure>
             <figure tabIndex={0} className='life-list-img-wrapper group col-span-1 row-span-3'>
                 <AnimatedPhoto
-                    src='images/life/japan_house.webp'
-                    alt='A block of traditional japanese architecture'
-                    title='Kyoto'
-                    description='Houses'
+                    src='images/life/kumrat.webp'
+                    alt='kumrat'
+                    title='Kumrat'
+                    description='Visit 2022'
                 />
             </figure>
         </div>
