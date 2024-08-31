@@ -493,9 +493,9 @@ const workList = [
 ]
 const testimonialsList = [
     {
-        name: 'Ben Gavin',
+        name: 'Henry Esparza',
         title: 'Senior SE, Birchgold',
-        image: 'images/testimonials/ben.webp',
+        image: 'images/testimonials/henry.webp',
         alt: "Ben Gavin's avatar",
         href: 'https://birchgold.com/',
         ariaLabel: 'Ben Gavin (opens in a new tab)',
@@ -525,7 +525,7 @@ const testimonialsList = [
                 </li>
             </ul>
         ),
-        summary: `Wasil has great communication and gives a lot of positive feedback onto how to make this project work better.`
+        summary: `I needed an Automated task to make a SOAP API call to pull report data from my lead manager. With this data we made another API call to update data. This was setup using python and has run flawlessly since Wasil set it up. I highly recommend him for your projects.`
     },
     {
         name: 'Alister Martin',
