@@ -1,4 +1,5 @@
 import { useRef } from 'react'
+import { toggleRainMP3 } from '../audio/player'
 
 interface AnimatedPhotoProps {
     src: string
@@ -45,10 +46,10 @@ export function PhotoMasonry() {
             </figure>
             <figure tabIndex={0} className='life-list-img-wrapper group col-span-1 row-span-3'>
                 <AnimatedPhoto
-                    src='images/life/hk_island.webp'
-                    alt='Overlooking the South China Sea from Po Toi Island'
-                    title='Hong Kong'
-                    description='Po Toi Island'
+                    src='images/life/kashmir.webp '
+                    alt='Visiting Kashmir, the heaven on earth.'
+                    title='Kashmir'
+                    description='Visit 2018'
                 />
             </figure>
             <figure tabIndex={0} className='life-list-img-wrapper group col-span-1 row-span-5'>
@@ -61,19 +62,20 @@ export function PhotoMasonry() {
             </figure>
             <figure tabIndex={0} className='life-list-img-wrapper group row-span-6'>
                 <AnimatedPhoto
-                    src='images/life/thailand_dragon_tower.webp'
-                    alt='A high tower with a Chinese dragon twining around it'
-                    title='Bangkok'
-                    description='Dragon Tower'
+                    src='images/life/minar.webp'
+                    alt='.'
+                    title='Minar-e-Pakistan'
+                    description='tower of Pakistan'
                 />
             </figure>
-            <figure tabIndex={0} className='life-list-img-wrapper group col-span-1 row-span-7'>
+            <figure tabIndex={0} className='life-list-img-wrapper group col-span-1 row-span-7' onClick={toggleRainMP3}>
                 <AnimatedPhoto
-                    src='images/life/kumamoto_forest.webp'
-                    alt='A stone road leading into a forest'
-                    title='Kumamoto'
-                    description='Forest'
+                    src='https://cdn.pixabay.com/animation/2023/03/05/12/05/12-05-54-62_512.gif'
+                    alt='rain gif'
+                    title='I 💘 rain.'
+                    description='Click to start raining.'
                 />
+                {/* <div>these are some of the images</div> */}
             </figure>
             <figure tabIndex={0} className='life-list-img-wrapper group col-span-1 row-span-6'>
                 <AnimatedPhoto

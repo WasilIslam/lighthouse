@@ -20,7 +20,7 @@ import {
 import webDesignAnimation from '@/assets/svgs/web_design.json'
 import softwareAnimation from '@/assets/svgs/software_skill.json'
 import otherSkillAnimation from '@/assets/svgs/other_skill.json'
-import { FaTwitter, FaWhatsapp } from 'react-icons/fa6'
+import { FaGoogle, FaTwitter, FaWhatsapp } from 'react-icons/fa6'
 
 const titles = ['Full-Stack Developer', 'Web Guru', 'or an automation king', 'Human being']
 const studyList = [
@@ -494,16 +494,16 @@ const workList = [
 const testimonialsList = [
     {
         name: 'Ben Gavin',
-        title: 'CEO, Dialedinbookeeping',
+        title: 'Senior SE, Birchgold',
         image: 'images/testimonials/ben.webp',
         alt: "Ben Gavin's avatar",
-        href: 'https://dialedinbookkeeping.com/',
+        href: 'https://birchgold.com/',
         ariaLabel: 'Ben Gavin (opens in a new tab)',
         linkIcons: (
             <ul className='flex gap-2'>
                 <li>
                     <a
-                        href='https://www.linkedin.com/in/bengavin'
+                        href='https://www.linkedin.com/in/henry-esparza-83bb81a9/'
                         target='_blank'
                         rel='noreferrer noopener'
                         aria-label='Linkedin (opens in a new tab)'
@@ -544,7 +544,7 @@ const testimonialsList = [
                         aria-label='Linkedin (opens in a new tab)'
                         className='block'
                     >
-                        <FaLinkedin className='icon-link-md' />
+                        <FaGoogle className='icon-link-md' />
                     </a>
                 </li>
             </ul>
@@ -1026,12 +1026,7 @@ export const HtmlContent = memo(function HtmlContent() {
                     contentObserverRef={contentObserverRef}
                 >
                     <p>
-                        My life is simple yet joyful, you'll either find me sitting in front of the computer, losing
-                        myself in a gaming adventure or a pile of messy code, or exploring the hidden gems of a city. I
-                        often find surprises and beauty in those untold places. Every now and then, I love stepping out
-                        to explore different events or dive into new experiences purely for the joy of it. I believe
-                        that a dash of spontaneity and a sprinkle of randomness can refresh your mindset and illuminate
-                        your life.
+                    I am still searching for the meaning and purpose of my life. Currently, I spend most of my time coding, researching, and coding again. I also practice martial arts and swim occasionally.
                     </p>
                     <PhotoMasonry />
                 </HtmlSection>
