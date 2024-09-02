@@ -493,11 +493,11 @@ const workList = [
 ]
 const testimonialsList = [
     {
-        name: 'Henry Esparza',
-        title: 'Senior SE, Birchgold',
-        image: 'images/testimonials/henry.webp',
+        name: '(name removed)',
+        title: 'Senior SE, ...',
+        image: 'images/testimonials/....webp',
         alt: "Ben Gavin's avatar",
-        href: 'https://birchgold.com/',
+        href: 'https://....com/',
         ariaLabel: 'Ben Gavin (opens in a new tab)',
         linkIcons: (
             <ul className='flex gap-2'>
