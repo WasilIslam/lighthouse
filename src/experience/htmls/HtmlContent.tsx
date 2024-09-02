@@ -525,7 +525,7 @@ const testimonialsList = [
                 </li>
             </ul>
         ),
-        summary: `I needed an Automated task to make a SOAP API call to pull report data from my lead manager. With this data we made another API call to update data. This was setup using python and has run flawlessly since Wasil set it up. I highly recommend him for your projects.`
+        summary: `(ack removed...)`
     },
     {
         name: 'Alister Martin',
